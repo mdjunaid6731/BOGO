@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #e88ea1;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  /* Option Box */
+  .option-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .option-box:hover {
+    border-color: #f28096;
+  }
+  
+  .option-box.active {
+    border: 2px solid #f28096;
+    background-color: #fff0f4;
+  }
+  
+  .option-box input[type="radio"] {
+    display: none;
+  }
+  
+  .label-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .unit {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .badge {
+    background-color: #f28096;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 3px;
+  }
+  
+  .price {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .strikethrough {
+    text-decoration: line-through;
+    font-size: 13px;
+    color: #aaa;
+  }
+  
+  /* MOST POPULAR tag */
+  .most-popular {
+    background: #f28096;
+    color: white;
+    padding: 3px 6px;
+    font-size: 11px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-left: auto;
+  }
+  
+  /* Dropdown section */
+  .details {
+    display: none;
+    margin-top: 15px;
+  }
+  
+  .option-box.active .details {
+    display: block;
+  }
+  
+  .dropdowns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .dropdowns label {
+    font-size: 14px;
+    margin-right: 5px;
+    font-weight: 500;
+  }
+  
+  .dropdowns select {
+    padding: 6px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 25px;
+    text-align: center;
+  }
+  
+  .free-delivery {
+    color: #f28096;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .total {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  #total-price {
+    font-weight: bold;
+  }
+  
+  .add-cart {
+    background-color: #f28096;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.2s ease;
+  }
+  
+  .add-cart:hover {
+    background-color: #e06080;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .label-top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .dropdowns {
+      gap: 6px;
+    }
+  }
+  
